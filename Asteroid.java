@@ -1,20 +1,19 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class Asteroid here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Asteroid extends Actor {
     private int speed;
 
     public Asteroid(int difficulty) {
-        this.speed = 2 + difficulty;
+        speed = 2 + difficulty;
+        setImage("asteroid.png");
     }
 
     public void act() {
+        MyWorld world = (MyWorld) getWorld();
+        if (world != null && world.isFrozen()) return;
+
         setLocation(getX(), getY() + speed);
+
         if (getY() > getWorld().getHeight()) {
             getWorld().removeObject(this);
         }
