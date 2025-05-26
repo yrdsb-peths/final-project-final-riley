@@ -1,21 +1,16 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class EndScreen here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class EndScreen extends World
-{
+public class EndScreen extends World {
+    public EndScreen() {
+        super(600, 400, 1);
+        setBackground("end_background.jpg");
+        showText("GAME OVER", 300, 180);
+        showText("Press R to Restart", 300, 220);
+    }
 
-    /**
-     * Constructor for objects of class EndScreen.
-     * 
-     */
-    public EndScreen()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+    public void act() {
+        if (Greenfoot.isKeyDown("r")) {
+            Greenfoot.setWorld(new MyWorld());
+        }
     }
 }

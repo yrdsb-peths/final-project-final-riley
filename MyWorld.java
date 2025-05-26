@@ -1,4 +1,5 @@
 import greenfoot.*;
+import greenfoot.*;
 
 public class MyWorld extends World {
     private int score = 0;
@@ -37,7 +38,7 @@ public class MyWorld extends World {
 
         if (!freezeActive && freezeCooldown <= 0 && Greenfoot.isKeyDown("c")) {
             freezeActive = true;
-            freezeTimer = 180; // 3 seconds
+            freezeTimer = 120; // 2 seconds
             freezeCooldown = 600; // 10 seconds
         }
 
