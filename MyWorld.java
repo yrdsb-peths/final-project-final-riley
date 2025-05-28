@@ -1,6 +1,11 @@
 import greenfoot.*;
 import greenfoot.*;
-
+/**
+ * Write a description of class MyWorld here.
+ * 
+ * @author (Riley) 
+ * @version (May 2025)
+ */
 public class MyWorld extends World {
     private int score = 0;
     private int difficulty = 0;

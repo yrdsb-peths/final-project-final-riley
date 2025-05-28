@@ -1,5 +1,10 @@
 import greenfoot.*;
-
+/**
+ * Write a description of class TitleScreen here.
+ * 
+ * @author (Riley) 
+ * @version (May 2025)
+ */
 public class TitleScreen extends World {
     public TitleScreen() {
         super(600, 400, 1);
@@ -15,3 +20,4 @@ public class TitleScreen extends World {
         }
     }
 }
+

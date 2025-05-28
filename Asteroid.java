@@ -1,5 +1,10 @@
 import greenfoot.*;
-
+/**
+ * Write a description of class Asteroid here.
+ * 
+ * @author (Riley) 
+ * @version (May 2025)
+ */
 public class Asteroid extends Actor {
     private int speed;
 
@@ -19,3 +24,4 @@ public class Asteroid extends Actor {
         }
     }
 }
+

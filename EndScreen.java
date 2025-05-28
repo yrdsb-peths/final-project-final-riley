@@ -1,5 +1,10 @@
 import greenfoot.*;
-
+/**
+ * Write a description of class EndScreen here.
+ * 
+ * @author (Riley) 
+ * @version (May 2025)
+ */
 public class EndScreen extends World {
     public EndScreen() {
         super(600, 400, 1);
