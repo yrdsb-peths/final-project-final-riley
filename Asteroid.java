@@ -1,6 +1,6 @@
 import greenfoot.*;
 /**
- * Write a description of class Asteroid here.
+ * Dodge the meteors so it doesnt break the spaceship. 
  * 
  * @author (Riley) 
  * @version (May 2025)

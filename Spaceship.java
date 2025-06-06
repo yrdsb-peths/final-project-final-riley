@@ -1,6 +1,6 @@
 import greenfoot.*;
 /**
- * Write a description of class Spaceship here.
+ * Main character of game 
  * 
  * @author (Riley) 
  * @version (May 2025)
@@ -31,7 +31,7 @@ public class Spaceship extends Actor {
         frozenImage.scale(frozenImage.getWidth() / 8, frozenImage.getHeight() / 8);
         setImage(frozenImage);
         isFrozenLook = true;
-    } 
+    } //changes image when using ability
     else if (!world.isFrozen() && isFrozenLook) {
         GreenfootImage normalImage = new GreenfootImage("spaceship.png");
         normalImage.scale(normalImage.getWidth() / 8, normalImage.getHeight() / 8);
@@ -40,7 +40,7 @@ public class Spaceship extends Actor {
     }
 
     }
-
+//if spaceship touches meteor game ends
     private void checkCollision() {
         if (isTouching(Asteroid.class)) {
             Greenfoot.setWorld(new EndScreen());

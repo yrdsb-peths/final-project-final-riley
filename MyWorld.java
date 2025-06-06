@@ -23,7 +23,7 @@ public class MyWorld extends World {
 
     public void act() {
         handleFreezeCheat();
-
+        //difficulty of meteors
         if (Greenfoot.getRandomNumber(100) < 3) {
             addObject(new Asteroid(difficulty), Greenfoot.getRandomNumber(getWidth()), 0);
         }
@@ -37,7 +37,7 @@ public class MyWorld extends World {
         showText("Score: " + score, 70, 20);
         showText("C to Freeze (" + (freezeCooldown / 60) + "s)", 500, 20);
     }
-
+        //freeze ability usable every 10 secs for 2 secs
     private void handleFreezeCheat() {
         if (freezeCooldown > 0) freezeCooldown--;
 

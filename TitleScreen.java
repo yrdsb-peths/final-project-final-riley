@@ -1,6 +1,6 @@
 import greenfoot.*;
 /**
- * Write a description of class TitleScreen here.
+ * Starting screen.
  * 
  * @author (Riley) 
  * @version (May 2025)

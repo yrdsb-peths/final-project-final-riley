@@ -1,6 +1,6 @@
 import greenfoot.*;
 /**
- * Write a description of class EndScreen here.
+ * Shows is spaceship gets hit by meteor.
  * 
  * @author (Riley) 
  * @version (May 2025)
