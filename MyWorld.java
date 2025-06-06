@@ -24,7 +24,7 @@ public class MyWorld extends World {
     public void act() {
         handleFreezeCheat();
 
-        if (Greenfoot.getRandomNumber(100) < 4) {
+        if (Greenfoot.getRandomNumber(100) < 3) {
             addObject(new Asteroid(difficulty), Greenfoot.getRandomNumber(getWidth()), 0);
         }
 

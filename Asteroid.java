@@ -9,7 +9,7 @@ public class Asteroid extends Actor {
     private int speed;
 
     public Asteroid(int difficulty) {
-        speed = 2 + difficulty;
+        speed = 1 + difficulty;
         setImage("asteroid.png");
     }
 

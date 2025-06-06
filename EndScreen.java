@@ -6,7 +6,8 @@ import greenfoot.*;
  * @version (May 2025)
  */
 public class EndScreen extends World {
-    public EndScreen() {
+    public EndScreen() 
+    {
         super(600, 400, 1);
         setBackground("end_background.jpg");
         showText("GAME OVER", 300, 180);
